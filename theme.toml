@@ -1,4 +1,4 @@
-name = "apollo"
+name = "apollo-custom"
 description = "Modern and minimalistic blog theme"
 min_version = "0.14.0"
 license = "MIT"

@@ -51,12 +51,12 @@ a:hover {
 }
 
 time {
-  color: grey;
+  color: #9c9a9a;
 }
 
 /* Remove post list padding */
 @media screen and (max-width: 600px) {
-  .list>ul {
+  .list > ul {
     margin: 0;
     padding: 0;
   }

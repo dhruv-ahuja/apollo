@@ -13,7 +13,7 @@ highlight_theme = "ayu-dark"
 toc = true
 use_cdn = false
 favicon = "/icon/favicon.png"
-theme = "auto"      
+theme = "dark"
 # mathjax = true
 # mathjax_dollar_inline_enable = true
 
@@ -33,4 +33,4 @@ custom_css = []
 [extra.analytics]
 enabled = true
 goatcounter_user = "your_user"
-goatcounter_host = "example.com"    # default= goatcounter.com
+goatcounter_host = "example.com" # default= goatcounter.com

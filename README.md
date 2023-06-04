@@ -1,6 +1,7 @@
 # apollo
 
-Modern and minimalistic blog theme powered by [Zola](https://getzola.org). See a live preview [here](https://not-matthias.github.io/apollo).
+A fork of the modern and minimalistic Apollo blog theme powered by [Zola](https://getzola.org). See a live preview of the original theme [here](https://not-matthias.github.io/apollo).
+Link to the original theme [here](https://github.com/not-matthias/apollo).
 
 <sub><sup>Named after the greek god of knowledge, wisdom and intellect</sup></sub>
 
@@ -20,6 +21,7 @@ Modern and minimalistic blog theme powered by [Zola](https://getzola.org). See a
 
 - [X] Pagination
 - [X] Themes (light, dark, auto)
+- [X] Theme toggle
 - [X] Projects page
 - [X] Analytics using [GoatCounter](https://www.goatcounter.com/)
 - [x] Social Links
@@ -32,7 +34,7 @@ Modern and minimalistic blog theme powered by [Zola](https://getzola.org). See a
 
 1. Download the theme
 ```
-git submodule add https://github.com/not-matthias/apollo themes/apollo
+git submodule add https://github.com/dhruv-ahuja/apollo themes/apollo
 ```
 
 2. Add `theme = "apollo"` to your `config.toml`

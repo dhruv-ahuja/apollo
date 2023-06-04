@@ -108,7 +108,7 @@
     <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
 
 
-    {% set theme = config.extra.mode %}
+    {% set theme = config.extra.theme %}
     {% if theme == "dark" or theme == "toggle" %}
     <!-- * having light.css here ensures that it is loaded on each request! -->
     <link  rel="stylesheet" type="text/css" href={{ get_url(path="theme/light.css") }} />

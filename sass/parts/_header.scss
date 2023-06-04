@@ -59,7 +59,6 @@ header .main {
   border: unset;
   width: 24px;
   height: 24px;
-
 }
 
 .meta {
@@ -105,10 +104,4 @@ h5::before {
 h6::before {
   color: var(--primary-color);
   content: "###### ";
-}
-
-@media (prefers-color-scheme: dark) {
-  .social>img {
-    filter: invert(1);
-  }
 }

@@ -1,4 +1,4 @@
-:root {
+:root.dark {
   --text-0: rgba(255, 255, 255, 87%);
   --text-1: rgba(255, 255, 255, 60%);
 
@@ -8,8 +8,22 @@
 
   --primary-color: #50fa7b;
   --hover-color: black;
-}
 
-time {
-  color: #9c9a9a;
+  time {
+    color: #9c9a9a;
+  }
+
+  .social>img {
+    filter: invert(1);
+  }
+
+  // remove the inversion to render the icons in black, just like the text
+  .social>img:hover {
+    filter: invert(0);
+  }
+  
+  a:hover {
+      background-color: var(--primary-color);
+      color: var(--hover-color);
+  }
 }

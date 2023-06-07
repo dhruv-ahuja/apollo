@@ -4,9 +4,10 @@
 
         <div class="socials">
             {% for social in config.extra.socials %}
-            <a rel="me" href="{{ social.url }}" class="social">
+            <a rel="me" href="{{ social.url }}" class="social" target="_blank">
                 <img alt={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
             </a>
+            
             {% endfor %}
         </div>
     </div>
@@ -15,8 +16,6 @@
         {% for menu in config.extra.menu %}
         <a href={{ menu.url }} style="margin-left: 0.7em">{{ menu.name }}</a>
         {% endfor %}
-    </nav>
-    <nav>
         {% if config.extra.theme == "toggle" %}
         | <a id="dark-mode-toggle" onclick="toggleTheme()" href=""></a>
         <script src={{ get_url(path="js/themetoggle.js" ) }}></script>

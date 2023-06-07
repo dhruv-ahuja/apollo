@@ -13,13 +13,14 @@
     color: #9c9a9a;
   }
 
-  .social>img {
+  // * applying inversion on the complete square rather than just the icon
+  .social {
     filter: invert(1);
   }
 
-  // remove the inversion to render the icons in black, just like the text
-  .social>img:hover {
-    filter: invert(0);
+  // remove the inversion to render the icons in black, to match text hover effect
+  .social:hover {
+    filter:invert(0);
   }
   
   a:hover {

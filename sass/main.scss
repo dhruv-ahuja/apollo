@@ -30,6 +30,16 @@ html {
   word-wrap: break-word;
 }
 
+footer {
+    max-width: 944px;
+    margin: 40px auto 15px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+    word-wrap: break-word;
+    border-top: 3px dotted #9c9a9a;
+}
+
 @media all and (min-width:640px) {
   html {
     font-size: 16.5px;

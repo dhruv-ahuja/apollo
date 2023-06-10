@@ -4,7 +4,7 @@ function setTheme(mode, toggleButtonExists) {
 
     if (mode === "dark") {
         if (toggleButtonExists === true) {
-            document.getElementById("darkModeStyle").disabled = false;
+            // document.getElementById("darkModeStyle").disabled = false;
             document.getElementById("dark-mode-toggle").innerHTML = "<i data-feather=\"sun\"></i>";
             feather.replace()
         }
@@ -13,7 +13,7 @@ function setTheme(mode, toggleButtonExists) {
 
     } else if (mode === "light") {
         if (toggleButtonExists === true) {
-            document.getElementById("darkModeStyle").disabled = true;
+            // document.getElementById("darkModeStyle").disabled = true;
             document.getElementById("dark-mode-toggle").innerHTML = "<i data-feather=\"moon\"></i>";
             feather.replace()
         }

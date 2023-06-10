@@ -9,7 +9,6 @@ function setTheme(mode, toggleButtonExists) {
             feather.replace()
         }
         htmlElement.classList.add("dark")
-        htmlElement.classList.remove("light")
 
     } else if (mode === "light") {
         if (toggleButtonExists === true) {
@@ -17,7 +16,6 @@ function setTheme(mode, toggleButtonExists) {
             document.getElementById("dark-mode-toggle").innerHTML = "<i data-feather=\"moon\"></i>";
             feather.replace()
         }
-        htmlElement.classList.add("light")
         htmlElement.classList.remove("dark")
     }
 }

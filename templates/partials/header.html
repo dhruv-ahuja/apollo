@@ -107,14 +107,18 @@
     {# RSS #}
     <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path="atom.xml", trailing_slash=false) }}">
 
-
     {% set theme = config.extra.theme %}
-    {% if theme == "dark" or theme == "toggle" %}
-    <!-- * having light.css here ensures that it is loaded on each request! -->
-    <link  rel="stylesheet" type="text/css" href={{ get_url(path="theme/light.css") }} />
+    {% if theme == "dark" %}
+    <link rel="stylesheet" type="text/css" href={{ get_url(path="theme/dark.css") }} media="(prefers-color-scheme: dark)" />
+
+    {% elif theme == "light" %} 
+    <link rel="stylesheet" type="text/css" href={{ get_url(path="theme/light.css") }} />
+
+    {% elif theme == "toggle" %}
+    <!-- * loading both light and dark themes to enable proper toggle -->
+    <link rel="stylesheet" type="text/css" href={{ get_url(path="theme/light.css") }} />
+    <link rel="stylesheet" type="text/css" href={{ get_url(path="theme/dark.css") }} media="(prefers-color-scheme: dark)" />
     <link id="darkModeStyle" rel="stylesheet" type="text/css" href="{{ get_url(path='theme/dark.css') }}" media="(prefers-color-scheme: dark)" />
-    {% else %} 
-    <link  rel="stylesheet" type="text/css" href={{ get_url(path="theme/light.css") }} />
     {% endif %}
 
     <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="main.css") }} />

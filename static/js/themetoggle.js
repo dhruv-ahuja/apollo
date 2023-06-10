@@ -30,15 +30,5 @@ function toggleTheme() {
     }
 }
 
-// * run only if toggle mode is set 
-var toggleButton = document.getElementById("dark-mode-toggle")
-
-if (toggleButton !== null) {
-    let savedTheme = localStorage.getItem("theme-storage") || "light";
-    setTheme(savedTheme, true)
-}
-
-// * set theme based on current selection in config.toml `extra` section
-function manualSetTheme(mode) {
-    setTheme(mode, false)
-}
+let savedTheme = localStorage.getItem("theme-storage") || "light";
+setTheme(savedTheme, true)

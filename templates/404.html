@@ -1,8 +1,21 @@
-{% extends "page.html" %}
+{% import "macros/macros.html" as post_macros %}
 
-{% block main_content %}
-    <main class="centered-header">
-        {{ post_macros::page_header(title="404")}}
-        <span>Page not found :(</span>
-    </main>
-{% endblock main_content %}
+<!DOCTYPE html>
+<html> 
+{% include "partials/header.html" %}
+
+<body>
+    <div class="content">
+        {% include "partials/nav.html" %}
+
+        {# Post page is the default #}
+        {% block main_content %}
+        <main class="centered-header">
+            {{ post_macros::page_header(title="404")}}
+            <span>Page not found :(</span>
+        </main>
+        {% endblock main_content %}
+
+    </div>
+</body>
+</html>
